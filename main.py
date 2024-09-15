@@ -11,3 +11,12 @@ m = int(input('Количество столбцов'))
 value = input(f'Значение')
 print('Матрица')
 matrix = get_matrix(n, m, value)
+
+if n <= 0:
+    print("Неверное количество строк")
+elif m <= 0:
+    print("Неверное количество столбцов")
+else:
+    print("Матрица")
+    for i in matrix:
+        print(*i)
